@@ -1,0 +1,128 @@
+.App {
+    text-align: center;
+}
+
+.App-logo {
+    height: 40vmin;
+    pointer-events: none;
+}
+.fontGreen {
+    color:forestgreen;
+}
+.fontBlack {
+    color:black;
+}
+#fontCounter {
+    font-size:20px;
+    font-weight:bold;
+}
+.btnAdd, .btnRemove, .btnCrono {
+    display: table;
+    width: 200px;
+    font-size: 19px;
+    cursor: pointer;
+    margin-top: 10px;
+    padding: 10px;
+    text-align:left
+}
+    .btnAdd{
+        background-color:aquamarine
+    } 
+    .btnRemove{
+        background-color:hotpink
+    }
+.btnAdd:hover, .btnRemove:hover, .btnCrono:hover {
+    opacity:0.7
+}
+.btnCrono {
+    background-color:cornflowerblue
+}
+   
+    #fontCounter {
+        border: 1px #FFF solid;
+        background-color: #FFF;
+        font-size: 50px;
+        width: 120px;
+        text-align: center;
+        margin-top: 50px;
+    }
+#boxCounter {
+    background-color: aquamarine;
+    display: block;
+    width: 250px;
+    height: 250px;
+    font-size: 50px;
+    margin-top:10px
+}
+.base-timer {
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+
+.base-timer__svg {
+    transform: scaleX(-1);
+}
+
+.base-timer__circle {
+    fill: none;
+    stroke: none;
+}
+
+.base-timer__path-elapsed {
+    stroke-width: 7px;
+    stroke: grey;
+}
+
+.base-timer__path-remaining {
+    stroke-width: 7px;
+    stroke-linecap: round;
+    transform: rotate(90deg);
+    transform-origin: center;
+    transition: 1s linear all;
+    fill-rule: nonzero;
+    stroke: red;
+}
+
+.base-timer__label {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+
+.App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.App-link {
+    color: #61dafb;
+}
+
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
